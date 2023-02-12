@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Contact Details</h2>
+    <table cellspacing="20"> <!--Styling is not good do using only html like cellspacing-->
+        <tbody>
+            <tr> <!--In this way we can change the layout using table(A table can be contain a image also)-->
+                <strong>
+                    <td>Phone Number</td>
+                </strong>
+                <td> 9950953437</td>
+            </tr> <br> <!--We can also use the paragraph tag instead of using br tag-->
+            <tr>
+                <strong>
+                    <td>E-mail me</td>
+                </strong></strong>
+                <td>somujeet911@gmail.com </td>
+            </tr> <br>
+        </tbody>
+    </table>
+    <h3><em>Thanks For Contacting Me</em></h3>
+
+
+
+
+    <!--Please Note that the method="get" works fine but method="post" throws error-->
+
+
+    <form class="" action="index.html" method="get">
+        <label>Enter Your Name</label>
+        <input type="text"> <br>
+        <!--Below is the example of radio button ref. from w3school-->
+
+        <input type="radio" id="gender" name="Gender" value="Male">
+        Male
+        <input type="radio" id="gender" name="Gender" value="Female">
+        Female
+        <input type="radio" id="gender" name="Gender" value="Unknown">
+        Prefer Not To Say <br>
+        <label>Yes</label>
+        <input type="checkbox" name="Checked My Website Completely"> <br>
+        <div><label>Choose File To Upload </label>
+            <input type="file" name="ALLFiles" accept="video/*,image/*,.doc,.docx,.pdf,.txt,.pptx">
+        </div> <!--video/* and image/* means all types of videos and images-->
+
+        <div>
+            <input type="color" id="colourpicker" value="#e66465">
+            <label for="colourpicker"></label> <!--We can use the for
+            attribute if we declare the id which is recommended-->
+        </div>
+        <div>
+            <label for="touch">E-Mail:</label>
+            <input type="email" id="touch" name="E-mail">
+
+        </div> <br>
+        <p>Message Me</p> <!--We use text area for a text box whose size is
+        determined by rows(vertical side) and cols(horizontal side)-->
+        <textarea name="name" rows="20" cols="40"></textarea>
+
+
+        <input type="submit" name="send">
+
+
+
+
+    </form>
+
+</body>
+
+</html>
